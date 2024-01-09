@@ -1,14 +1,14 @@
-# ZeroCodeTrial
+# ZerocodeTrial
 
 # Project Name
-This is a trial project for testing (API /Load / DB) using ZeroCode framework
+This is a trial project for testing (API /Load / DB) using Zerocode framework
 
-# ZeroCode framework:
+# Zerocode framework:
 Zerocode is a modern lightweight, simple and extensible open-source framework for writing test intentions in simple JSON or YAML format that facilitates both declarative configuration and automation.
 
-ZeroCode framework is written in Java and support Integration test level.  
+Zerocode framework is written in Java and support Integration test level.  
 
-# ZeroCode framework Github link:
+# Zerocode framework Github link:
 https://github.com/authorjapps/zerocode
 
 # Main test scenarios covered in the repo:
