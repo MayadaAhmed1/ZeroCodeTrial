@@ -1,0 +1,46 @@
+{
+  "scenarioName": "Create user successfully",
+  "ignoreStepFailures": false,
+  "steps": [
+    {
+      "name": "Create_user_successfully",
+      "method": "POST",
+      "url": "/api/users",
+      "ignoreStep": true,
+      "request": {
+        "body": {
+          "firstName": "Mayada",
+          "lastName":"Ahmed",
+          "email": "test@hotmail.com"
+        }
+      },
+      "verifyMode": "LENIENT",
+      "verify":{
+        "status": 201,
+        "body": {
+          "firstName": "Mayada",
+          "lastName":"Ahmed"
+        }
+      }
+    },
+    {
+      "name": "Check_firstname_validation_message",
+      "method": "POST",
+      "url": "/api/users",
+      "request": {
+        "body": {
+          "lastName": "Ahmed",
+          "email": "test@hotmail.com"
+        }
+      },
+      "assertions":{
+        "status": 400,
+        "body": {
+          "message": "First name should not be empty"
+        }
+    }
+    }
+  ]
+
+}
+

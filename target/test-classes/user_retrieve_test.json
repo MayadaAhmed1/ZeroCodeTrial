@@ -1,0 +1,18 @@
+{
+  "scenarioName": "Check user retrieve values",
+  "steps": [
+  {
+    "name": "check first name in user array",
+    "method": "GET",
+    "url": "/api/users",
+    "request": {
+
+    },
+"validators": [{
+    "field": "$.body[1].firstName",
+    "value": "Mayada"
+}]
+
+  }
+]
+}

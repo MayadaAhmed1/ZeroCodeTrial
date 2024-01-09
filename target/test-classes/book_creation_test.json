@@ -1,0 +1,35 @@
+{
+  "scenarioName": "check new book creation cases",
+  "steps": [
+    {
+      "name":"create_book_using_tokenvalue",
+      "method": "POST",
+      "url": "/api/books",
+      "request": {
+        "body": {
+          "title": "${RANDOM>STRING:8}",
+          "authors": "${STATIC,ALPHABET:4}"
+        }
+      },
+      "assertions":{
+        "status":200,
+        "body": {
+          "authors": "abcd"
+        }
+      },
+      "name":"create_book_using_external_json_body",
+      "method": "POST",
+      "url": "/api/books",
+      "request": {
+        "body": "${JSON.FILE:reusable_content/sample_book_body.json}"
+        },
+      "assertions":{
+        "status":200,
+        "body": {
+          "title": "my title",
+          "authors": "authors1, authors2"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Login with token ",
+  "method": "POST",
+  "url": "/login",
+  "request": {
+    "body": {
+      "username": "test",
+      "password": "test"
+    }
+  },
+  "assertions": {
+    "status": 200,
+    "headers": {
+      "Authorization": "$NOT.NULL"
+    }
+  }}
