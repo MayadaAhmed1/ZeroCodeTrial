@@ -18,7 +18,7 @@ Validate on retrieve all user data
 Validate on login user cases( with/out token)  
 Validate on assign new book for a user using token value  
 
--DB: 
+-DB:   
 We applying "Data/value" type of testing by:-  
 Validate result for user who buy book (using token value)
 
